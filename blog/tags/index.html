@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>NoWhere - Jeremy Chen</title>
+	<title>Tags - NoWhere - Jeremy Chen</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -50,26 +50,44 @@
 </header> <!-- End Header -->
 
   <div class="content wrapper">
-    <ol class="post-card-box clearfix">
+    
+
+
+<section class="blog-tags">
+  <h1>Tags in Blog</h1>
+  <ul class="tags">
+<!--  cycles through tag list and creates header row of all tags used in site with accompanying per-tag counts...-->
   
-  <li>
-    <div class="post-card">
-      <a href="/Hello-BLOG/" class="post-card-image" style="background-image: url( /assets/img/post-1.jpg )">
-      </a>
-
-      <div class="post-card-body">
-        
-        <a href="/tags#Mood" class="tag">|&#32;Mood</a>
-        
-        <a href="/tags#Blog" class="tag">|&#32;Blog</a>
-        
-        <a href="/Hello-BLOG/" class="post-card-link"><h3 class="post-card-title">Hello BLOG!</h3></a>
-      </div>
-
+    
+    <li ><a href="#Blog" class="tag">Blog <span>(1)</span></a></li>
+  
+    
+    <li ><a href="#Mood" class="tag">Mood <span>(1)</span></a></li>
+  
+  </ul>
+<!--cycles through tag list and creates subheader for each tag name...-->
+  
+    
+  <h2 id="Blog">Blog</h2>
+<!--  lists all posts corresponding to specific tag...-->
+    
+    <div class="tag-list">
+        <span><a href="/Hello-BLOG/">Hello BLOG!</a></span>
+        <small><span>| 28 Jun 2019</span></small>
     </div>
-  </li>
+    
   
-</ol>
+    
+  <h2 id="Mood">Mood</h2>
+<!--  lists all posts corresponding to specific tag...-->
+    
+    <div class="tag-list">
+        <span><a href="/Hello-BLOG/">Hello BLOG!</a></span>
+        <small><span>| 28 Jun 2019</span></small>
+    </div>
+    
+  
+</section>
 
   <div class="search-box">
   <div class="wrapper">
@@ -108,7 +126,7 @@
   SimpleJekyllSearch({
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('results-container'),
-    json: '/search.json',
+    json: 'search.json',
     searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
     noResultsText: 'No results found',
     fuzzy: false,
