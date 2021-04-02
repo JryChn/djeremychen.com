@@ -9,10 +9,10 @@
   * {
     margin: 0;
     width: 100%;
+    font-family: “Arial”, ”Microsoft YaHei”, ”黑體”, ”宋體”, sans-serif;
   }
 
   #content {
-    text-align: center;
     border-radius: 20px;
     width: 100%;
     height: 350px;
@@ -22,43 +22,38 @@
     left: 0;
     right: 0;
     bottom: 0;
-    font-family: “Arial”,”Microsoft YaHei”,”黑體”,”宋體”,sans-serif;
-  }
-
-  #tableLine {
+    text-align: center;
     line-height: 50px;
-    position: relative;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    animation-name: opacityAnimation;
-    animation-duration: 8s;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
-      animation-direction:alternate;
-      letter-spacing: 2px;
-  }
-
-  #chineseIndex {
-    font-size: 40px;
     font-weight: bold;
-    animation-name: opacityAnimation;
-    animation-duration: 3s;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
-      animation-direction:alternate;
+    font-size: 30px;
   }
 
+  #chineseIndex,
   #englishIndex {
-    font-size: 40px;
-    font-weight: bold;
     animation-name: opacityAnimation;
     animation-duration: 3s;
     animation-delay: 2s;
     animation-iteration-count: infinite;
-      animation-direction:alternate;
+    animation-direction: alternate;
+    letter-spacing: 2px;
+  }
+
+  #line {
+    animation-name: opacityAnimation;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    letter-spacing: 2px;
+
+  }
+
+  #footer {
+    position: absolute;
+    bottom: 0;
+    height: 20px;
+    left: 0;
+    padding: 0 10px;
   }
 
   @keyframes opacityAnimation {
@@ -74,33 +69,50 @@
 
 <body>
   <div id="content">
-    <div class="indexContent">
-      <div id="chineseIndex">
-        <h2>你好</h2>
-      </div>
-      <div id="tableLine">
-        <hr>
-      </div>
-      <div id="englishIndex">
-        <h2>Hello</h2>
-      </div>
-    </div>
-
+    <h2 id="chineseIndex">你好</h2>
+    <hr id="line">
+    <h2 id="englishIndex">Hello</h2>
   </div>
+
+  <footer id="footer" style="font-size:20px;font-weight:normal;">
+    <a href="#" id="skipAnimation">Skip Animation | </a>
+    <a href="#" id="changeLanguange">Language </a>
+    <span float="right">
+      <a href="http://djeremychen.com/blog/blog.html">Blog | </a>
+      <a href="http://djeremychen.com/index.html">Home Page | </a>
+      <a href="https://github.com/jrychn">Github</a>
+    </span>
+  </footer>
 
 </body>
 <script>
-  var chinese = document.getElementById("chineseIndex")
-  var english = document.getElementById("englishIndex")
-  new Promise(
-  setTimeout(function(){
-      english.innerHTML=
-          "Welcome to my resume page";
-      chinese.innerHTML="欢迎来到我的简历主页"
-    },5000).then(setTimeout(function(){
-        english.innerHTML="Now we will generate my resume by a funny way";
-        chinese.innerHTML="现在我们将用一个有趣的过程来生成我的简历"
-      },11000)));
+  var chinese = document.getElementById("chineseIndex");
+  var english = document.getElementById("englishIndex");
+  window.setTimeout(function () {
+    english.innerHTML =
+      "Welcome to my resume page";
+    chinese.innerHTML = "欢迎来到我的简历主页"
+  }, 5000)
+  window.setTimeout(function () {
+    english.innerHTML = "Now we will generate my resume by a funny way";
+    chinese.innerHTML = "现在我们将用一个有趣的过程来生成我的简历"
+  }, 11000)
+  window.setTimeout(function () {
+    english.innerHTML = "You can click the skip animation in the lower left corner at any time";
+    chinese.innerHTML = "你可以在任何时候点击左下角的跳过动画"
+  }, 17000);
+  window.setTimeout(function () {
+    english.innerHTML = "Of course, you can also switch languages at any time";
+    chinese.innerHTML = "当然，你也可以随时切换语言"
+  }, 23000);
+  window.setTimeout(function () {
+    english.innerHTML = "Are you ready?";
+    chinese.innerHTML = "准备好了吗？"
+  }, 29000);
+  window.setTimeout(function () {
+    english.innerHTML = "Here we go!";
+    chinese.innerHTML = "我们开始吧!"
+  }, 35000);
 </script>
 
 </html>
