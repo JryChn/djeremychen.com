@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Jeremy Chen's resume</title>
+  <style>
+    * {
+      -webkit-transition: all 1s;
+    }
+
+    html,
+    body {
+      margin-top: 0;
+      height: 100%;
+      overflow: hidden;
+      background: rgb(63, 82, 99);
+      background-image: url(./img/b.gif);
+      background-repeat: no-repeat;
+      background-size: cover;
+      -webkit-perspective: 1000px;
+    }
+
+    pre,
+    a {
+      color: white;
+    }
+
+    pre {
+      overflow: auto;
+      max-height: 90%;
+      width: 100%;
+      border-radius: 1px;
+      /* Prevents bad clipping in Chrome */
+    }
+
+    pre:not(:empty) {
+      overflow: auto;
+      background: rgb(48, 48, 48);
+      border: 1px solid #ccc;
+      max-height: 45vh;
+      width: 49%;
+      font-size: 14px;
+      font-family: monospace;
+      padding: 1vh 0.5vw;
+      box-shadow: -4px 4px 2px 0 rgba(0, 0, 0, 0.3);
+      white-space: pre-wrap;
+      outline: 0;
+      margin: 1vh 0.5vw;
+    }
+
+    #style-text {
+      -webkit-transform: translateX(98.5%) rotateY(-10deg);
+      -webkit-transform-origin: right;
+      position: absolute;
+      max-height: 93.1vh;
+    }
+
+    .resumePage {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 20px;
+    }
+
+    #header {
+      position: absolute;
+      bottom: 0;
+      height: 20px;
+      left: 0;
+      right: 0;
+      padding: 0 10px;
+    }
+
+    a:after {
+      content: '';
+      padding-right: 5px;
+      border-right-width: 1px;
+      border-right-style: solid;
+      border-color: inherit;
+    }
+
+    a:last-of-type:after {
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="resumePage">
+    <div id="header">
+      <span style="float:right">
+        <a href="http://djeremychen.com/blog">Blog</a>
+        <a href="https://github.com/jrychn">GitHub</a>
+      </span>
+    </div>
+    <pre id="style-text"></pre>
+    <pre id="work-text">
+Djeremychen.com
+=========
+
+Jeremy Chen
+Software Development engineer
+Full-Stack / Open Source/ deep learning
+
+Contact
+-------
+
+* Jrychn @ Telegram
+* jeremychen@djeremychen.com
+* Jrychn on Github.com
+
+Graduated School
+--------
+
+* Top 10 University Bachelor of EE
+* Master
+
+Work Experience
+-----------
+
+* Software Development Engineer @ IT Communication Company
+
+Project
+-----------
+
+* SpaceVim @github.com
+* Arrietty @github.com
+
+    </pre>
+
+  </div>
+</body>
+
+</html>
