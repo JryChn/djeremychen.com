@@ -1,6 +1,6 @@
 @import url('resume.css');
 
-  header[class="mainClass"] {
+main.mainClass  header {
     position: absolute;
     top: 0;
     height: 30px;
@@ -8,7 +8,7 @@
     background: #006266;
   }
 
-  footer[class="mainClass"] {
+main.mainClass  footer {
     position: absolute;
     bottom: 0;
     height: 20px;
@@ -16,7 +16,7 @@
     background: #006266
   }
 
-  section[class="mainClass"]{
+main.mainClass  section{
     position: absolute;
     height: 200px;
     width: 700px;
@@ -27,22 +27,25 @@
     justify-content: space-evenly;
     align-items: center;
   }
-  section[class="mainClass"] span a{
+  main.mainClass section span label{
     display: inline-block;
     font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
     text-decoration: none;
     font-size: 30px;
     color: #1e272e;
+    cursor: pointer;
   }
-  span[class^="icon"]{
+  main.mainClass span[class^="icon"]{
     display: block;
     text-align: center;
     font-size: 30px;
   }
-  span[class="mainClass"]:hover>span:nth-of-type(1){
+  main.mainClass span:hover>span:nth-of-type(1){
     animation-name: jumpIcon;
     animation-duration: 2s;
   }
+
+
 
   @keyframes jumpIcon{
     20%{

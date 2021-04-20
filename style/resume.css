@@ -1,25 +1,65 @@
-#resume a:active,#resume {
+input[id="resume"]:checked~main span[id="resume"] {
   animation-name: jumpAway;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
-#resume a:active,#blog {
+input[id="resume"]:checked~main span[id="blog"]  {
   animation-name: jumpAway;
   animation-duration: 1s;
   animation-delay: 1s;
   animation-fill-mode: forwards;
 }
-#resume a:active,#aboutMe {
+input[id="resume"]:checked~main span[id="aboutMe"] {
   animation-name: jumpAway;
   animation-duration: 1s;
   animation-delay: 2s;
   animation-fill-mode: forwards;
 }
-#resume a:active,#contactMe {
+input[id="resume"]:checked~main span[id="contactMe"]  {
   animation-name: jumpAway;
   animation-duration: 1s;
   animation-delay: 3s;
   animation-fill-mode: forwards;
+}
+input[id="resume"]:checked~main.mainClass{
+  transform: scale(0) translateY(100%);
+  transition-delay: 4s;
+}
+
+input[id="resume"]:checked~main.resumeClass{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../resume/img/b.gif);
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  animation-name: dropDown;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+input[id="resume"]:checked~main.resumeClass pre{
+      border-radius: 1px;
+      transform: translateX(-100%) scale(0);
+      overflow: auto;
+      background: rgb(48, 48, 48);
+      border: 1px solid #ccc;
+      color: white;
+      max-height: 90vh;
+      width: 49%;
+      font-size: 14px;
+      font-family: monospace;
+      padding: 1vh 0.5vw;
+      box-shadow: -4px 4px 2px 0 rgba(0, 0, 0, 0.3);
+      white-space: pre-wrap;
+      outline: 0;
+      margin: 1vh 0.5vw;
+      animation-name: showFromLeft;
+      animation-fill-mode: forwards;
+      animation-delay: 6s;
+      animation-duration: 1.5s;
 }
 
 @keyframes jumpAway{
@@ -85,3 +125,31 @@
   }
 }
 
+@keyframes dropDown{
+  0%{
+    transform: translateY(0);
+  }
+  30%{
+    transform: translateY(-100%);
+  }
+  50%{
+    transform: translateY(-80%);
+  }
+  70%{
+    transform: translateY(-100%);
+  }
+  90%{
+    transform: translateY(-95%);
+  }
+  100%{
+    transform: translateY(-100%);
+  }
+}
+@keyframes showFromLeft{
+  0%{
+    transform: translateX(-100%) scale(0);
+  }
+  100%{
+    transform: translateX(0) scale(1);
+  }
+}

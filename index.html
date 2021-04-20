@@ -11,6 +11,14 @@
     padding: 0;
   }
 
+  body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #006266;
+    overflow: hidden;
+  }
+
+
   main {
     width: 100vw;
     height: 100vh;
@@ -18,34 +26,76 @@
     position: relative;
   }
 
+  .hiddenRadio {
+    display: none;
+  }
 </style>
 
 <link rel="stylesheet" type="text/css" href="style/main.css">
 <link rel="stylesheet" href="icon/iconfont.css">
 
 <body>
-  <main>
-    <header class="mainClass">
+  <input name="page" type="radio" checked id="main" class="hiddenRadio" autocomplete="off">
+  <input name="page" type="radio" id="resume" class="hiddenRadio" autocomplete="off">
+  <input name="page" type="radio" id="blog" class="hiddenRadio" autocomplete="off">
+  <input name="page" type="radio" id="aboutMe" class="hiddenRadio" autocomplete="off">
+  <input name="page" type="radio" id="contactMe" class="hiddenRadio" autocomplete="off">
+  <main class="mainClass">
+    <header>
     </header>
     <section class="mainClass">
-      <span id="resume" class="mainClass">
+      <span id="resume">
         <span class="iconfont icon-jianli"></span>
-        <a href="#resume">简历</a>
+        <label for="resume">简历</label>
       </span>
-      <span id="blog" class="mainClass">
+      <span id="blog">
         <span class="iconfont icon-bokeblogger3"></span>
-        <a href="#blog">博客</a>
+        <label for="blog">博客</label>
       </span>
-      <span id="aboutMe" class="mainClass">
+      <span id="aboutMe">
         <span class="iconfont icon-zu1783"></span>
-        <a href="#aboutMe">关于我</a>
+        <label for="aboutMe">关于我</label>
       </span>
-      <span id="contactMe" class="mainClass">
+      <span id="contactMe">
         <span class="iconfont icon-lianxi"></span>
-        <a href="#contactMe">联系我</a>
+        <label for="contactMe">联系我</label>
       </span>
     </section>
-    <footer class="mainClass"></footer>
+    <footer></footer>
+  </main>
+  <main class="resumeClass">
+    <pre>
+Djeremychen.com
+=========
+
+Jeremy Chen
+Software Development engineer
+Full-Stack / Open Source/ deep learning
+
+Contact
+-------
+
+* Jrychn @ Telegram
+* jeremychen@djeremychen.com
+* Jrychn on Github.com
+
+Graduated School
+--------
+
+* Top 10 University Bachelor of EE
+* Master
+
+Work Experience
+-----------
+
+* Software Development Engineer @ IT Communication Company
+
+Project
+-----------
+
+* SpaceVim @github.com
+* Arrietty @github.com
+    </pre>
   </main>
 </body>
 
