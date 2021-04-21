@@ -1,54 +1,24 @@
-input[id="resume"]:checked~main span[id="resume"] {
-  animation-name: jumpAway;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
-input[id="resume"]:checked~main span[id="blog"]  {
-  animation-name: jumpAway;
-  animation-duration: 1s;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
-}
-input[id="resume"]:checked~main span[id="aboutMe"] {
-  animation-name: jumpAway;
-  animation-duration: 1s;
-  animation-delay: 2s;
-  animation-fill-mode: forwards;
-}
-input[id="resume"]:checked~main span[id="contactMe"]  {
-  animation-name: jumpAway;
-  animation-duration: 1s;
-  animation-delay: 3s;
-  animation-fill-mode: forwards;
-}
-input[id="resume"]:checked~main.mainClass{
-  transform: scale(0) translateY(100%);
-  transition-delay: 4s;
-}
+@import url('resumeAnimation.css');
 
-input[id="resume"]:checked~main.resumeClass{
+.resumeClass{
   width: 100vw;
   height: 100vh;
   background-image: url(../resume/img/b.gif);
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   background-size: cover;
-  animation-name: dropDown;
-  animation-delay: 4s;
-  animation-fill-mode: forwards;
-  animation-duration: 1s;
 }
-input[id="resume"]:checked~main.resumeClass pre{
+
+  .resumeClass pre{
       border-radius: 1px;
-      transform: translateX(-100%) scale(0);
       overflow: auto;
       background: rgb(48, 48, 48);
       border: 1px solid #ccc;
       color: white;
       max-height: 90vh;
-      width: 49%;
+      width: 35%;
       font-size: 14px;
       font-family: monospace;
       padding: 1vh 0.5vw;
@@ -56,100 +26,38 @@ input[id="resume"]:checked~main.resumeClass pre{
       white-space: pre-wrap;
       outline: 0;
       margin: 1vh 0.5vw;
-      animation-name: showFromLeft;
-      animation-fill-mode: forwards;
-      animation-delay: 6s;
-      animation-duration: 1.5s;
+      transform: translateX(-100%) scale(0);
 }
+  .skillBoard {
+    width: 25%;
+    margin-left:25%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    transform: translateX(80%);
+    transition: 1s;
+  }
 
-@keyframes jumpAway{
-  5%{
-    transform: translateY(-5px);
+  .skillBoardNav {
+    color:#ecf0f1;
+    font-weight: bold;
+    text-align: center;
+    align-self: center;
+    justify-self:end;
+    height: 90px;
+    border-radius: 2px;
+    background:linear-gradient(to bottom,#e67e22,#d35400,#e67e22);
+    cursor:default;
+    writing-mode: vertical-rl;
   }
-  10%{
-    transform: translateY(-10px);
+  .skillBoardContent{
+    background: linear-gradient(to bottom,#16a085 10%,#006266 90%,#16a085);
+    border: 1px solid #006266;
+    border-bottom-left-radius: 5%;
+    border-top-left-radius: 5%;
   }
-  15%{
-    transform: translateY(-15px);
-  }
-  20%{
-    transform: translateY(-15px);
-  }
-  25%{
-    transform: translateY(-15px);
-  }
-  30%{
-    transform: translateY(-15px);
-  }
-  35%{
-    transform: translateY(-15px);
-  }
-  40%{
-    transform: translateY(-10px);
-  }
-  45%{
-    transform: translateY(-5px);
-  }
-  50%{
-    transform: translateY(0);
-  }
-  55%{
-    transform: translateY(10px);
-  }
-  60%{
-    transform: translateY(20px);
-  }
-  65%{
-    transform: translateY(35px);
-  }
-  70%{
-    transform: translateY(50px);
-  }
-  75%{
-    transform: translateY(80px);
-  }
-  80%{
-    transform: translateY(120px);
-  }
-  85%{
-    transform: translateY(190px);
-  }
-  90%{
-    transform: translateY(290px);
-  }
-  95%{
-    transform: translateY(500px);
-  }
-  100%{
-    transform: translateY(100px) scale(0);
-  }
-}
 
-@keyframes dropDown{
-  0%{
-    transform: translateY(0);
+  .skillContent{
+    padding: 0;
+    margin: 20px;
   }
-  30%{
-    transform: translateY(-100%);
-  }
-  50%{
-    transform: translateY(-80%);
-  }
-  70%{
-    transform: translateY(-100%);
-  }
-  90%{
-    transform: translateY(-95%);
-  }
-  100%{
-    transform: translateY(-100%);
-  }
-}
-@keyframes showFromLeft{
-  0%{
-    transform: translateX(-100%) scale(0);
-  }
-  100%{
-    transform: translateX(0) scale(1);
-  }
-}

@@ -29,9 +29,22 @@
   .hiddenRadio {
     display: none;
   }
+
+  #backNav {
+    position: relative;
+    float: left;
+    font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    transform: scale(0);
+    z-index: 1;
+  }
 </style>
 
 <link rel="stylesheet" type="text/css" href="style/main.css">
+<link rel="stylesheet" type="text/css" href="style/resume.css">
 <link rel="stylesheet" href="icon/iconfont.css">
 
 <body>
@@ -40,9 +53,10 @@
   <input name="page" type="radio" id="blog" class="hiddenRadio" autocomplete="off">
   <input name="page" type="radio" id="aboutMe" class="hiddenRadio" autocomplete="off">
   <input name="page" type="radio" id="contactMe" class="hiddenRadio" autocomplete="off">
+  <header>
+    <label id="backNav" for="main">返回</label>
+  </header>
   <main class="mainClass">
-    <header>
-    </header>
     <section class="mainClass">
       <span id="resume">
         <span class="iconfont icon-jianli"></span>
@@ -61,7 +75,6 @@
         <label for="contactMe">联系我</label>
       </span>
     </section>
-    <footer></footer>
   </main>
   <main class="resumeClass">
     <pre>
@@ -96,7 +109,54 @@ Project
 * SpaceVim @github.com
 * Arrietty @github.com
     </pre>
+    <section class="skillBoard">
+      <section class="skillBoardNav">
+        技能表
+      </section>
+      <section class="skillBoardContent">
+        <div class="skillContent">
+          <p>操作系统:</p>
+          <progress  value="60" max="100"></progress>
+        </div>
+        <div class="skillContent">
+          <p>数据结构:</p>
+          <progress  value="60" max="100"></progress>
+        </div>
+        <div class="skillContent">
+          <p>计算机网络技术:</p>
+          <progress value="50" max="100"></progress>
+        </div>
+        <div class="skillContent">
+          <p>计算机组成原理:</p>
+          <progress value="40" max="100"></progress>
+        </div>
+        <br>
+        <br>
+        <div class="skillContent">
+          <p>Java:</p>
+          <progress value="60" max="100"></progress>
+        </div>
+        <div class="skillContent">
+          <p>C:</p>
+          <progress value="50" max="100"></progress>
+        </div>
+        <div class="skillContent">
+          <p>Go:</p>
+          <progress value="40" max="100"></progress>
+        </div>
+        <div class="skillContent">
+          <p>Rust:</p>
+          <progress value="40" max="100"></progress>
+        </div>
+        <div class="skillContent">
+          <p>Python:</p>
+          <progress value="30" max="100"></progress>
+        </div>
+      </section>
+
+    </section>
   </main>
+  <footer></footer>
 </body>
 
 </html>
