@@ -1,44 +1,50 @@
 input[id="resume"]:checked~main span[id="resume"] {
   animation-name: jumpAway;
-  animation-duration: 0.5s;
+  animation-duration: 0.7s;
   animation-fill-mode: forwards;
 }
 input[id="resume"]:checked~main span[id="blog"]  {
   animation-name: jumpAway;
-  animation-duration: 0.5s;
-  animation-delay:0.5s;
+  animation-duration: 0.7s;
+  animation-delay:0.7s;
   animation-fill-mode: forwards;
 }
 input[id="resume"]:checked~main span[id="aboutMe"] {
   animation-name: jumpAway;
-  animation-duration:0.5s;
-  animation-delay: 1s;
+  animation-duration:0.7s;
+  animation-delay: 1.4s;
   animation-fill-mode: forwards;
 }
 input[id="resume"]:checked~main span[id="contactMe"]  {
   animation-name: jumpAway;
-  animation-duration:0.5s;
-  animation-delay: 1.5s;
+  animation-duration:0.7s;
+  animation-delay: 2.1s;
   animation-fill-mode: forwards;
 }
 input[id="resume"]:checked~main.mainClass{
   transform: scale(0) translateY(100%);
-  transition-delay: 1.5s;
+  transition-delay: 2.8s;
 }
 
 input[id="resume"]:checked~main.resumeClass{
   animation-name: dropDown;
-  animation-delay: 2s;
+  animation-delay: 2.8s;
   animation-fill-mode: forwards;
-  animation-duration: 0.5s;
+  animation-duration: 0.7s;
 }
 input[id="resume"]:checked~main.resumeClass pre{
       animation-name: showFromLeft;
       animation-fill-mode: forwards;
-      animation-delay: 2.5s;
+      animation-delay: 3.5s;
       animation-duration: 1s;
 }
 
+input[id="resume"]:checked~header label{
+  animation-name: scaleOut;
+  animation-duration: 1s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
 .skillBoard:hover{
   transform: translateX(0);
   transition: 1s;
@@ -133,5 +139,10 @@ input[id="resume"]:checked~main.resumeClass pre{
   }
   100%{
     transform: translateX(0) scale(1);
+  }
+}
+@keyframes scaleOut{
+  100%{
+    transform: scale(1);
   }
 }
