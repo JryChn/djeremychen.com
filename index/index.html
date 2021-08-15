@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>DJeremy Chen</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-color: #006266;
+        overflow: hidden;
+    }
+
+
+    main {
+        width: 100vw;
+        height: 100vh;
+        background: #006266;
+        position: relative;
+    }
+
+    .hiddenRadio {
+        display: none;
+    }
+
+    #backNav {
+        position: relative;
+        float: left;
+        font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+        font-size: 30px;
+        font-weight: bolder;
+        color: white;
+        cursor: pointer;
+        transform: scale(0);
+        z-index: 1;
+    }
+</style>
+
+<link rel="stylesheet" type="text/css" href="style/main.css">
+<link rel="stylesheet" type="text/css" href="style/resume.css">
+<link rel="stylesheet" href="icon/iconfont.css">
+
+<body>
+    <input name="page" type="radio" checked id="main" class="hiddenRadio" autocomplete="off">
+    <input name="page" type="radio" id="resume" class="hiddenRadio" autocomplete="off">
+    <input name="page" type="radio" id="blog" class="hiddenRadio" autocomplete="off">
+    <input name="page" type="radio" id="aboutMe" class="hiddenRadio" autocomplete="off">
+    <input name="page" type="radio" id="contactMe" class="hiddenRadio" autocomplete="off">
+    <header>
+        <label id="backNav" for="main">返回</label>
+    </header>
+    <main class="mainClass">
+        <section class="mainClass">
+            <span id="resume">
+                <span class="iconfont icon-jianli"></span>
+                <label for="resume">简历</label>
+            </span>
+            <span id="blog">
+                <span class="iconfont icon-bokeblogger3"></span>
+                <label for="blog">博客</label>
+            </span>
+            <span id="aboutMe">
+                <span class="iconfont icon-zu1783"></span>
+                <label for="aboutMe">关于我</label>
+            </span>
+            <span id="contactMe">
+                <span class="iconfont icon-lianxi"></span>
+                <label for="contactMe">联系我</label>
+            </span>
+        </section>
+    </main>
+    <main class="resumeClass">
+        <pre>
+            Djeremychen.com
+            =========
+
+            Jeremy Chen
+            Software Development engineer
+            Full-Stack / Open Source/ deep learning
+
+            Contact
+            -------
+
+            * Jrychn @ Telegram
+            * jeremychen@djeremychen.com
+            * Jrychn on Github.com
+
+            Graduated School
+            --------
+
+            * Top 10 University Bachelor of EE
+            * Master
+
+            Work Experience
+            -----------
+
+            * Software Development Engineer @ IT Communication Company
+
+            Project
+            -----------
+
+            * SpaceVim @github.com
+            * Arrietty @github.com
+        </pre>
+        <section class="skillBoard">
+            <section class="skillBoardNav">
+                技能表
+            </section>
+            <section class="skillBoardContent">
+                <div class="skillContent">
+                    <p>操作系统:</p>
+                    <progress value="60" max="100"></progress>
+                </div>
+                <div class="skillContent">
+                    <p>数据结构:</p>
+                    <progress value="60" max="100"></progress>
+                </div>
+                <div class="skillContent">
+                    <p>计算机网络技术:</p>
+                    <progress value="50" max="100"></progress>
+                </div>
+                <div class="skillContent">
+                    <p>计算机组成原理:</p>
+                    <progress value="40" max="100"></progress>
+                </div>
+                <br>
+                <br>
+                <div class="skillContent">
+                    <p>Java:</p>
+                    <progress value="60" max="100"></progress>
+                </div>
+                <div class="skillContent">
+                    <p>C:</p>
+                    <progress value="50" max="100"></progress>
+                </div>
+                <div class="skillContent">
+                    <p>Go:</p>
+                    <progress value="40" max="100"></progress>
+                </div>
+                <div class="skillContent">
+                    <p>Rust:</p>
+                    <progress value="40" max="100"></progress>
+                </div>
+                <div class="skillContent">
+                    <p>Python:</p>
+                    <progress value="30" max="100"></progress>
+                </div>
+            </section>
+
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
