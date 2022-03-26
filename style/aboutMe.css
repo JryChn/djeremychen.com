@@ -1,0 +1,15 @@
+#aboutme::before {
+  display: block;
+  content: "";
+  background-image: linear-gradient(black 50%, white);
+  width: 100vw;
+  height: 120px;
+}
+#aboutme {
+  display: block;
+  height: 1000px;
+  color: white;
+  width: 100vw;
+  text-align: center;
+  background-color: white;
+}

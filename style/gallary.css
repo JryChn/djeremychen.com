@@ -1,0 +1,8 @@
+#gallary {
+  display: block;
+  height: 1000px;
+  color: grey;
+  width: 100vw;
+  text-align: center;
+  background-color: white;
+}

@@ -1,34 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>DJeremy</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
-</head>
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-    }
-
-    #root {
-        width: 100%;
-        height: 100vh;
-        position: relative;
-    }
-</style>
-
-<body>
-    <div id="root">
-
-    </div>
-
-</body>
-<script src="live.js">
-
-</script>
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <link rel="stylesheet" href="style/header.css" />
+  <link rel="stylesheet" href="style/introduce.css" />
+  <link rel="stylesheet" href="style/aboutMe.css" />
+  <link rel="stylesheet" href="style/gallary.css" />
+  <link rel="stylesheet" href="style/stroy.css" />
+  <link rel="stylesheet" href="style/footer.css" />
+  <body>
+    <header>
+      <div id="header-icon">
+        <a href="http://djeremychen.com">
+          <img src="icon/icon.svg" alt="DJeremy" />
+        </a>
+      </div>
+      <nav id="header-nav">
+        <div>
+          <a href="#blog">Blog</a>
+        </div>
+        <div>
+          <a href="#about-me">AboutMe</a>
+        </div>
+        <div>
+          <a href="#gallery">Gallery</a>
+        </div>
+        <div>
+          <a href="#story">Story</a>
+        </div>
+      </nav>
+      <div id="header-contact">
+        <a href="#contact">Contact</a>
+      </div>
+    </header>
+    <main>
+      <div id="introduce">
+        <div id="introduce-words">
+          <h4>the greate shooter</h4>
+          <h1>DJeremyChen.com</h1>
+          <h6>
+            life is like a bottle of chocolate, if you want some ice cream you
+            need to buy it, but if you want to eat more, just go to bed and
+            <span>dream it</span>.
+          </h6>
+        </div>
+        <div id="introduce-video">
+          <img src="./static/introduce.gif" alt="" />
+        </div>
+        <div id="introduce-wave">
+          <img src="./static/wave.gif" alt=" WAVE PIC" />
+        </div>
+        <div id="introduce-words-2"><h4>Another words</h4></div>
+      </div>
+      <div id="aboutme">About me</div>
+      <div id="gallary">Gallary</div>
+      <div id="story">Stroy</div>
+    </main>
+    <footer></footer>
+  </body>
 </html>
