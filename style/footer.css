@@ -1,2 +1,5 @@
 footer {
+  height: 50px;
+  background-color: grey;
+  border-top: 3px solid black;
 }

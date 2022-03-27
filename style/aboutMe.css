@@ -1,15 +1,43 @@
-#aboutme::before {
-  display: block;
-  content: "";
-  background-image: linear-gradient(black 50%, white);
-  width: 100vw;
-  height: 120px;
+.aboutme {
+  display: flex;
+  height: 1200px;
+  background-color: #dcdde1;
+  flex-flow: column nowrap;
 }
-#aboutme {
-  display: block;
-  height: 1000px;
-  color: white;
-  width: 100vw;
+#aboutme-words {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#aboutme-protaits {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#aboutme-card-container {
+  flex: 1;
+}
+
+#aboutme-words > div {
+  width: 75%;
+  height: 80%;
   text-align: center;
-  background-color: white;
+  border: 2px solid #ffccdd;
+  line-height: 10em;
+}
+
+#aboutme-protaits > section {
+  margin: 0 70px;
+  border: 2px solid green;
+  width: 190px;
+  height: 160px;
+}
+#aboutme-card {
+  width: 60%;
+  height: 70%;
+  background-color: #ddffcc;
+  margin: 30px auto;
+  border: 2px solid black;
 }

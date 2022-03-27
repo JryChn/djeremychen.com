@@ -1,8 +1,19 @@
 #gallary {
-  display: block;
+  display: flex;
   height: 1000px;
-  color: grey;
-  width: 100vw;
-  text-align: center;
   background-color: white;
+}
+#gallary-words {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#gallary-words > div {
+  height: 80%;
+  width: 75%;
+  border: 3px solid #aaccee;
+}
+#gallary-container {
 }

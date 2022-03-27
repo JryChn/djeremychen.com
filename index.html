@@ -1,63 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>DJeremy</title>
+    <title>DJeremyChen</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
+  <link rel="stylesheet" href="style/page.css" />
   <link rel="stylesheet" href="style/header.css" />
   <link rel="stylesheet" href="style/introduce.css" />
+  <link rel="stylesheet" href="style/blog.css" />
   <link rel="stylesheet" href="style/aboutMe.css" />
   <link rel="stylesheet" href="style/gallary.css" />
-  <link rel="stylesheet" href="style/stroy.css" />
+  <link rel="stylesheet" href="style/story.css" />
   <link rel="stylesheet" href="style/footer.css" />
   <body>
     <header>
       <div id="header-icon">
-        <a href="http://djeremychen.com">
-          <img src="icon/icon.svg" alt="DJeremy" />
-        </a>
+        <a href="https://www.djeremychen.com"
+          ><img src="./icon/icon.svg" alt="DJeremyChen"
+        /></a>
       </div>
-      <nav id="header-nav">
-        <div>
-          <a href="#blog">Blog</a>
+      <nav class="header-nav">
+        <div class="header-nav" id="nav-blog"><a href="#blog">Blog</a></div>
+        <div class="header-nav" id="nav-aboutme">
+          <a href="#aboutme">AboutMe</a>
         </div>
-        <div>
-          <a href="#about-me">AboutMe</a>
+        <div class="header-nav" id="nav-gallary">
+          <a href="#gallary">Gallary</a>
         </div>
-        <div>
-          <a href="#gallery">Gallery</a>
-        </div>
-        <div>
-          <a href="#story">Story</a>
-        </div>
+        <div class="header-nav" id="nav-story"><a href="#story">Story</a></div>
       </nav>
-      <div id="header-contact">
-        <a href="#contact">Contact</a>
+      <div id="contact">
+        <div>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="contact-more">
+          <a href="#calendar">Calendar</a>
+          <a href="#resume">Resume</a>
+        </div>
       </div>
     </header>
     <main>
-      <div id="introduce">
-        <div id="introduce-words">
-          <h4>the greate shooter</h4>
-          <h1>DJeremyChen.com</h1>
-          <h6>
-            life is like a bottle of chocolate, if you want some ice cream you
-            need to buy it, but if you want to eat more, just go to bed and
-            <span>dream it</span>.
-          </h6>
+      <section class="introduce">
+        <div id="introduce-words-1"></div>
+        <div id="introduce-gif-1"></div>
+        <div id="introduce-gif2"></div>
+        <div id="introduce-words2"></div>
+      </section>
+
+      <div class="blog" id="blog">
+        <section id="blog-words-container">
+          <div id="blog-words">blog</div>
+        </section>
+        <div id="blog-container">
+          <div id="blog-1">
+            <div></div>
+            <div></div>
+          </div>
+          <div id="blog-2">
+            <div></div>
+            <div></div>
+          </div>
+          <div id="blog-3">
+            <div></div>
+            <div></div>
+          </div>
         </div>
-        <div id="introduce-video">
-          <img src="./static/introduce.gif" alt="" />
-        </div>
-        <div id="introduce-wave">
-          <img src="./static/wave.gif" alt=" WAVE PIC" />
-        </div>
-        <div id="introduce-words-2"><h4>Another words</h4></div>
       </div>
-      <div id="aboutme">About me</div>
-      <div id="gallary">Gallary</div>
-      <div id="story">Stroy</div>
+
+      <div class="aboutme" id="aboutme">
+        <div id="aboutme-words">
+          <div>words</div>
+        </div>
+        <div id="aboutme-protaits">
+          <section id="protaits-1"></section>
+          <section id="protaits-2"></section>
+          <section id="protaits-3"></section>
+        </div>
+        <div id="aboutme-card-container">
+          <div id="aboutme-card"></div>
+        </div>
+      </div>
+
+      <div id="gallary" class="gallary">
+        <div id="gallary-words">
+          <div>words</div>
+        </div>
+        <div id="gallary-container"></div>
+      </div>
+      <div id="story" class="story">
+        <div id="story-words">
+          <div>words</div>
+        </div>
+        <div id="story-container">
+                    <div id="story-selector">
+                        
+                    </div>
+                </div>
     </main>
     <footer></footer>
   </body>
