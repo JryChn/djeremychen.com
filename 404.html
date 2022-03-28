@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>404 Document</title>
+</head>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  #container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  #imgContent{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/404-background-image.gif);
+    filter: blur(7px);
+    position: absolute;
+  }
+
+  #textContent {
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+  }
+
+  #textContent h2 {
+    box-shadow: 0 5px 15px #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0 0;
+  }
+
+  #textContent p {
+    color: #fff;
+    text-align: center;
+    text-indent: 2rem;
+    line-height: 2rem;
+    font-weight: bold;
+    padding: 0 30px;
+  }
+</style>
+
+<body>
+  <div id=container>
+    <div id="textContent">
+      <h2>Sorry, The page has been gone.</h2>
+      <p>There are nothing here~~</p>
+      <button href="./index.html">Back to the Main page</button>
+    </div>
+    <div id="imgContent">
+    </div>
+  </div>
+</body>
+
+</html>
