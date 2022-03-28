@@ -28,6 +28,9 @@ nav[class="header-nav"] {
   color: #f1f2f6;
   margin: 0 20px;
 }
+.header-nav *:hover {
+  transform: translateY(-3px);
+}
 
 #contact {
   width: 100px;
